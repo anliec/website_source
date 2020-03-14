@@ -1,0 +1,52 @@
+
+<!-- Post Layout Start -->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body style="background-image:url({{ site.baseurl }}/{{ page.image }});background-repeat:no-repeat;background-position: top center;background-size: 100%;">
+
+    {% include navigation.html %}
+<!--     <img style="width:100%;overflow:hidden;" class="project-img" src="{{ site.baseurl }}/{{ page.image }}" alt=""> -->
+    
+    <section id="post" class="container content-section text-center" style="margin-top:40%;padding-top:30px;background:black;box-shadow: 6px 6px 6px rgba(0,0,0,0.75)">
+      
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+
+          {% include swipe-instructions.html %}
+
+          <h1><strong>{{ page.title }}</strong></h1>
+          <iframe src="https://ghbtns.com/github-btn.html?user={{ page.github-user }}&repo={{ page.github-repo }}&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+          <iframe src="https://ghbtns.com/github-btn.html?user={{ page.github-user }}&repo={{ page.github-repo }}&type=star&count=true&size=large&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+          <section class="text-justify" style="margin-top:30px">
+            {{ page.content | markdownify }}
+          </section>
+
+          {% include share.html %}
+
+          <hr />
+
+          {% if site.author_blurb %}
+          <div class="author row">
+            <img class="col-xs-4 col-sm-3 col-md-2" src="{{site.baseurl}}{{site.author_blurb_image}}" alt="Me" />
+            <p class="col-xs-8 col-sm-9 col-md-10">
+              {{ site.author_blurb }}
+            </p>
+          </div>
+          {% endif%}
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    {% include js.html %}
+
+  </body>
+</html>
+
+<!-- Post Layout End -->

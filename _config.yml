@@ -1,0 +1,226 @@
+
+# Site settings
+
+# NB! Set your site's url, otherwise stuff will break :)
+
+url: "https://anliec.github.io/"
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (https://yourusername.github.io/repository-name)
+# and NOT your user repository (https://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+#
+# NB! Without this *nothing* will work, because it's used in every path :)
+
+#baseurl: /personal-jekyll-theme
+
+# Google tracking id
+
+google-tracking-id: ""
+
+# Forces https everywhere in your website, except when you serve it locally
+# If you are not hosted on Github Pages, and your host doesn't support https
+# then you should disable it
+
+force-https: False
+
+#############
+# HTML Head #
+#############
+
+lang: "en"
+author: "Nicolas Six"
+title: "Nicolas Six"
+description: "Website of Nicolas Six"
+keywords: "Nicolas, Six"
+favicon: "/img/brain_bw_16p.png"
+
+################
+# Header layout #
+################
+
+black-favicon: "/img/brain_bw_16p.png"
+
+background-img: "../img/back_s.jpg"
+
+##############################
+# Dynamic Text on the Header #
+##############################
+
+dynamic-typing: True
+shuffle: False # Shuffle the lines.
+loop: True
+loop-count: 2 # Set False for infinite loop, or set any number for finite loop.
+type-speed: 8
+start-delay: 200
+delete-delay: 5000
+lines: # You can add HTML Tags in the Text
+  - text: "Always look on the bright side of life."
+  - text: "What if we try more power?"
+  - text: "The box says Windows 10 or better, so I installed Linux."
+  - text: "Machine learning is energy plus time, like the universe."
+  - text: "Asking if a computer can think is like asking if a submarine can swim."
+
+me-img: "/img/profile.jpg"
+
+# To use facebook profile pic comment the previous line and uncomment the following
+# line, and replace 'user_id' with your facebook user id.
+# Facebook user id can be found by clicking on your profile pic and the large number
+# in the end of the url just before '&type' is your user id.
+# Note: fbid is not the same as user id and user id only contains numbers
+
+# me-img: "https://graph.facebook.com/user_id/picture?type=large&width=500&height=500"
+
+# To use github profile pic uncomment the following line and replace 'user_name'
+# with your github user name.
+
+# me-img: "https://github.com/user_name.png?size=500"
+
+# To use gravatar profile pic uncomment the following line and replace 'email_hash'
+# with your gravatar profile email hash.
+# You can create the email hash by using an online tool like 'http://www.md5hashgenerator.com/'
+# just enter your email and it will generate the hash.
+
+# me-img: "https://www.gravatar.com/avatar/email_hash?s=500"
+
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#000000"
+apple-status-bar-style: "black"
+
+################
+# Web app mode #
+################
+
+web-app-mode: True
+
+# Icons for Web App mode
+
+icon-36p: "/img/web-app/icon-36p.png"
+icon-48p: "/img/web-app/icon-48p.png"
+icon-72p: "/img/web-app/icon-72p.png"
+icon-96p: "/img/web-app/icon-96p.png"
+icon-144p: "/img/web-app/icon-144p.png"
+icon-192p: "/img/web-app/icon-192p.png"
+
+########
+# Blog #
+########
+
+enable-gesture-navigation: False
+
+post-preview-words: 96
+
+paginate: 5
+
+email-share: False
+fb-share: False
+twitter-share: False
+linkedin-share: False
+reddit-share: False
+google-plus-share: False
+tumblr-share: False
+pinterest-share: False
+pocket-share: False
+vkontakte-share: False
+
+disqus-shortname: "personal-jekyll-theme"
+
+syntax-highlight: True
+
+############
+# Timeline #
+############
+
+events:
+  - image: "/img/timeline/gt_sq.png"
+    date: "January 2018 - December 2019"
+    description: "Georgia Tech, Atlanta - Master of Computer Science: Major in Machine learning with master thesis on real time object detection on mobile device."
+  - image: "/img/timeline/insa_sq.png"
+    date: "September 2014 - August 2019"
+    description: "INSA Lyon - Master of Computer Science: Advanced computer science classes on algorithm, C++, AI, Data mining, databases and information theory."
+  - image: "/img/timeline/insa_sq.png"
+    date: "September 2013 - June 2015"
+    description: "INSA Lyon - Advanced classes in Mathematics, Physics and Mechanics. Ranking: 19th over 650."
+
+# First image of the Timeline
+
+timeline-img: "/img/profile.jpg"
+
+###########
+# Contact #
+###########
+
+email: "nicolas.six@gatech.edu"
+
+################
+# Author Blurb #
+################
+
+# The author blurb goes underneath blog posts.
+# This works best when your author blurb image has a transparent background, or matches your site background color.
+
+# if the author_blurb is not set, then this feature is skipped
+author_blurb: "Nicolas Six is a Computer Science engineer passionate about machine learning and robotic."
+author_blurb_image: "/img/profile.jpg"
+
+##################
+# Social Buttons #
+##################
+
+social:
+  #- title: "facebook"
+    #url: "https://facebook.com/"
+  #- title: "twitter"
+    #url: "https://twitter.com/"
+  - title: "github"
+    url: "https://github.com/anliec"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/nicolas-six-a1457a112/"
+  #- title: "rss"
+    #url: "/feed.xml"
+
+############
+# 404 page #
+############
+
+err-404-img: "/img/labtocat.png"
+
+##################
+# GPG on Keybase #
+##################
+
+keybase-username: johnsmith
+keybase-in-social: False
+keybase-in-footer: False
+
+################################################################################
+
+# NB! Tread carefully if you want to change the variables below this point!
+
+# Sections shown in the index page
+
+pages_list:
+  About: 'about'
+  #Blog: 'latest-post'
+  Education: 'timeline'
+  Projects: 'projects'
+  Contact: 'contact'
+
+# Exclusion list from the generated _site
+
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+
+# Pagination path
+
+paginate_path: "blog/page:num/"
+
+# Enable minification SASS
+
+sass:
+  style: compressed
+
+gems:
+  - jekyll-paginate
+  - jemoji

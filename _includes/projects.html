@@ -1,0 +1,40 @@
+
+<!-- Timeline Start -->
+
+<section id="{{ page.section-type }}" class="container content-section text-center">
+<!--   <div class="row"> -->
+<!--     <div class="col-md-10 col-md-offset-1"> -->
+
+      {{ page.content | markdownify }}
+
+      <ul class="projects">
+
+        {% for p in site.posts %}
+          {% assign loopindex = forloop.index | modulo: 2 %}
+          {% capture class %}
+          {% if loopindex == 0 %}
+            projects-inverted
+          {% endif %}
+          {% endcapture %}
+          <a href="{{site.baseurl}}{{p.url}}">
+            <li class="{{ class }}" >
+              <div class="projects-image">
+                <img class="img-responsive" src="{{site.baseurl}}{{ p.image }}" alt="">
+              </div>
+              <div class="projects-panel">
+                <div class="projects-heading">
+                  <h4>{{ p.title }}</h4>
+                </div>
+                <div class="projects-body">
+                  {{ p.description | markdownify }}
+                </div>
+              </div>  
+            </li>
+          </a>
+        {% endfor %}
+      </ul>
+<!--     </div> -->
+<!--   </div> -->
+</section>
+
+<!-- Timeline End -->
