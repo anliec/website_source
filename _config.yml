@@ -178,6 +178,10 @@ social:
     url: "https://github.com/anliec"
   - title: "linkedin"
     url: "https://www.linkedin.com/in/nicolas-six-a1457a112/"
+  - title: "envelope"
+    url: "mailto:nicolas.six@gatech.edu"
+  - title: "phone"
+    url: "tel:+1-334-731-8262"
   #- title: "rss"
     #url: "/feed.xml"
 

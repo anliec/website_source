@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title: "Traffic sign classification"
-description: "Traffic sign classification using deep Siamese network."
+description: "Traffic sign classification using deep Siamese network to counter class imbalance."
 image: "img/siameseSign.png"
 permalink: "/:title/"
 github: "https://github.com/DL-project-Fall2019/Siamese-traffic-signs"
